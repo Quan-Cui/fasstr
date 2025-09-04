@@ -160,7 +160,7 @@ compute_hydat_peak_frequencies <- function(station_number,
                                          fit_distr_method = fit_distr_method,
                                          fit_quantiles = fit_quantiles,
                                          plot_curve = plot_curve,
-                                         plot_axis_title =  "Discharge (cms)")
+                                         plot_axis_title = plot_axis_title)
   
   return(analysis)
   

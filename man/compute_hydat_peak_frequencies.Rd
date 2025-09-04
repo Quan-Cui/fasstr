@@ -17,7 +17,8 @@ compute_hydat_peak_frequencies(
   start_year,
   end_year,
   exclude_years,
-  plot_curve = TRUE
+  plot_curve = TRUE,
+  plot_axis_title = "Discharge (cms)"
 )
 }
 \arguments{
@@ -56,6 +57,8 @@ Default \code{c(.975, .99, .98, .95, .90, .80, .50, .20, .10, .05, .01)}.}
 \item{exclude_years}{Numeric vector of years to exclude from analysis. Leave blank or set to \code{NULL} to include all years.}
 
 \item{plot_curve}{Logical value to indicate plotting the computed curve on the probability plot. Default \code{TRUE}.}
+
+\item{plot_axis_title}{Character string of the plot y-axis title. Default \code{'Discharge (cms)'}.}
 }
 \value{
 A list with the following elements:

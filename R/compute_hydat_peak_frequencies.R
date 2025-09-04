@@ -64,7 +64,8 @@ compute_hydat_peak_frequencies <- function(station_number,
                                            start_year,
                                            end_year,
                                            exclude_years,
-                                           plot_curve = TRUE){
+                                           plot_curve = TRUE,
+                                           plot_axis_title = "Discharge (cms)"){
   
   # replicate the frequency analysis of the HEC-SSP program
   # refer to Chapter 7 of the user manual
@@ -158,7 +159,8 @@ compute_hydat_peak_frequencies <- function(station_number,
                                          fit_distr = fit_distr,
                                          fit_distr_method = fit_distr_method,
                                          fit_quantiles = fit_quantiles,
-                                         plot_curve = plot_curve)
+                                         plot_curve = plot_curve,
+                                         plot_axis_title =  "Discharge (cms)")
   
   return(analysis)
   
